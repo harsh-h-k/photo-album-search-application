@@ -4,7 +4,7 @@ import {useStyles} from '../../styles/styles'
 function Main({ albums, photos }) {
 const classes = useStyles()
 
-    const [tempAlbums, setTempAlbums] = useState(albums)
+    const [tAlbums, setTAlbums] = useState(albums)
     const [searchBarValue, setSearchBarValue] = useState('')
     const [result, setResult] = useState([])
     // console.log(albums[0].id)
@@ -44,7 +44,7 @@ const classes = useStyles()
     console.log(result)
 
     useEffect(() => {
-        setTempAlbums(albums)
+        setTAlbums(albums)
     }, [])
     return (
         <div style={{width:"100%"}}>
